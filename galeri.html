@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | WEB Contractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Header -->
+    <!-- Navbar -->
+    <div class="fixed top-0 w-full z-50">
+        <header class="bg-blue-950/80 backdrop-blur-md p-6 flex items-center justify-between text-white shadow-md">
+            <div class="font-bold text-2xl tracking-tighter">WEB <span class="font-light">CONTRACTOR</span></div>
+            
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <nav class="space-x-6">
+                    <a href="index.html" class="hover:text-blue-300 transition">Home</a>
+                    <a href="tentang.html" class="hover:text-blue-300 transition">About Us</a>
+                    <a href="galeri.html" class="hover:text-blue-300 transition">Projects</a>
+                    <a href="kontak.html" class="hover:text-blue-300 transition">Contact</a>
+                </nav>
+            </div>
+
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-blue-950/80 backdrop-blur-lg text-white flex flex-col p-6 space-y-4 shadow-lg border-t border-white/10">
+            <a href="index.html" class="block py-2 border-b border-white/10">Home</a>
+            <a href="tentang.html" class="block py-2 border-b border-white/10">About Us</a>
+            <a href="galeri.html" class="block py-2 border-b border-white/10">Projects</a>
+            <a href="kontak.html" class="block py-2 border-b border-white/10">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Portfolio Content -->
+    <main class="pt-28 pb-20 container mx-auto px-6">
+        <div class="container mx-auto px-6">
+            
+            <!-- Page Title -->
+            <div class="text-center mb-16">
+                <h4 class="text-blue-600 font-semibold tracking-widest text-sm mb-4 uppercase">Our Work</h4>
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Featured Project Results</h1>
+                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Below is a collection of construction projects we have completed with high dedication. Each work reflects our commitment to the best material quality, construction precision, and client satisfaction.
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Portfolio Item 1 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=800" alt="Tropical Villa" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Modern Tropical Villa</h3>
+                    <p class="text-gray-500 text-sm">West Surabaya</p>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800" alt="Classic Residence" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Elegant Classic Residence</h3>
+                    <p class="text-gray-500 text-sm">Pakuwon Indah</p>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Minimalist House" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Minimalist Urban Dwelling</h3>
+                    <p class="text-gray-500 text-sm">CitraLand Surabaya</p>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=800" alt="House Concept" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Exclusive Home Concept</h3>
+                    <p class="text-gray-500 text-sm">Graha Famili</p>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&q=80&w=800" alt="Office" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Industrial Office Space</h3>
+                    <p class="text-gray-500 text-sm">Sidoarjo</p>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=800" alt="Townhouse" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Premium Townhouse</h3>
+                    <p class="text-gray-500 text-sm">Royal Residence</p>
+                </div>
+
+                <!-- Portfolio Item 7 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800" alt="Modern Skyscraper" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Modern Urban Skyline</h3>
+                    <p class="text-gray-500 text-sm">Surabaya Pusat</p>
+                </div>
+
+                <!-- Portfolio Item 8 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Commercial Building" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Commercial Plaza</h3>
+                    <p class="text-gray-500 text-sm">Gresik</p>
+                </div>
+
+                <!-- Portfolio Item 9 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Interior Design" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Luxury Apartment Interior</h3>
+                    <p class="text-gray-500 text-sm">Surabaya Barat</p>
+                </div>
+
+                <!-- Portfolio Item 10 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" alt="Construction Site" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Foundation Engineering</h3>
+                    <p class="text-gray-500 text-sm">Proyek Sidoarjo</p>
+                </div>
+
+                <!-- Portfolio Item 11 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.pexels.com/photos/209315/pexels-photo-209315.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Villa Resort" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Minimalist Villa Resort</h3>
+                    <p class="text-gray-500 text-sm">Batu, Malang</p>
+                </div>
+
+                <!-- Portfolio Item 12 -->
+                <div class="group cursor-pointer">
+                    <div class="overflow-hidden rounded-lg shadow-md mb-4 h-72">
+                        <img src="https://images.pexels.com/photos/259950/pexels-photo-259950.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern Renovation" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 group-hover:text-blue-600 transition">Modern Home Renovation</h3>
+                    <p class="text-gray-500 text-sm">Surabaya Timur</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-white py-10 mt-auto">
+        <div class="container mx-auto px-6 text-center text-sm">
+            &copy; 2026 WEB Contractor. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="assets/js/navbar.js"></script>
+
+</body>
+</html>

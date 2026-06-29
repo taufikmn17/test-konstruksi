@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WEB Contractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <div class="fixed top-0 w-full z-50">
+        <header class="bg-blue-950/80 backdrop-blur-md p-6 flex items-center justify-between text-white shadow-md">
+            <div class="font-bold text-2xl tracking-tighter">WEB <span class="font-light">CONTRACTOR</span></div>
+            
+            <!-- Menu Desktop -->
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <nav class="space-x-6">
+                    <a href="index.html" class="hover:text-blue-300 transition">Home</a>
+                    <a href="tentang.html" class="hover:text-blue-300 transition">About Us</a>
+                    <a href="galeri.html" class="hover:text-blue-300 transition">Projects</a>
+                    <a href="kontak.html" class="hover:text-blue-300 transition">Contact</a>
+                </nav>
+            </div>
+
+            <button id="menu-btn" class="md:hidden focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </header>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-blue-950/80 backdrop-blur-lg text-white flex flex-col p-6 space-y-4 shadow-lg border-t border-white/10">
+            <a href="index.html" class="block py-2 border-b border-white/10">Home</a>
+            <a href="tentang.html" class="block py-2 border-b border-white/10">About Us</a>
+            <a href="galeri.html" class="block py-2 border-b border-white/10">Projects</a>
+            <a href="kontak.html" class="block py-2 border-b border-white/10">Contact</a>
+        </nav>
+    </div>
+
+    <main class="pt-28 pb-20 container mx-auto px-6">
+        <h1 class="text-4xl font-bold mb-12 text-center">Contact Us</h1>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <p>📍 Jl. Pembangunan Utama No. 88, Surabaya, East Java</p>
+                <p>✉️ info@webcontractor.com</p>
+                <p>📞 +62 812-3456-7890</p>
+            </div>
+            <!-- Kontainer Peta -->
+            <div class="bg-gray-200 h-80 rounded-lg flex items-center justify-center shadow-lg border border-gray-100 overflow-hidden">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9413.242796372218!2d112.73478372421005!3d-7.265738766942504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f960aee9a64d%3A0xaa9e2f2c4ed67175!2sTunjungan%20Plaza!5e0!3m2!1sid!2sid!4v1782756685084!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/navbar.js"></script>
+</body>
+</html>
